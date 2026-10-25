@@ -1,0 +1,11 @@
+services:
+  - type: web
+    name: render-xray
+    env: docker
+    plan: free
+    dockerfilePath: ./Dockerfile
+    envVars:
+      - key: UUID
+        sync: false
+      - key: WS_PATH
+        sync: false
